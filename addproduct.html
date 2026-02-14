@@ -15,8 +15,23 @@
             var productBookings = document.getElementById("txtBookings").value;
             var productContact = document.getElementById("txtContact").value;
 
-  
+          var ProductDetails = {
+                Name: productName,
+                Style: productStyle,
+                Project: productProject,
+                Experience: productExperience,
+                Cost: productCost,
+                Location: productLocation,
+                Bookings: productBookings,
+                Contact: productContact
+            };
+
+             var StringfieldProductDetails= JSON.stringify(ProductDetails);
+
+            alert(ProductDetails);
+    
         }
+        
             </script>
 </head>
 
