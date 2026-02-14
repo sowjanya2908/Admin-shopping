@@ -6,9 +6,32 @@
     <script>
         function addProduct() {
             debugger;
-            var productName = document.getElementById("txtProductName").value;
-            alert(productName);
+            var productName = document.getElementById("txtName").value;
+            var productStyle = document.getElementById("txtStyle").value;
+            var productProject = document.getElementById("txtProject").value;
+            var productExperience = document.getElementById("txtExperience").value;
+            var productCost = document.getElementById("txtCost").value;
+            var productLocation = document.getElementById("txtLocation").value;
+            var productBookings = document.getElementById("txtBookings").value;
+            var productContact = document.getElementById("txtContact").value;
+
+          var ProductDetails = {
+                Name: productName,
+                Style: productStyle,
+                Project: productProject,
+                Experience: productExperience,
+                Cost: productCost,
+                Location: productLocation,
+                Bookings: productBookings,
+                Contact: productContact
+            };
+
+             var StringfieldProductDetails= JSON.stringify(ProductDetails);
+
+            alert(ProductDetails);
+        
         }
+        
             </script>
 </head>
 
