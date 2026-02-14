@@ -27,8 +27,7 @@
             };
 
              var StringfieldProductDetails= JSON.stringify(ProductDetails);
-
-            alert(ProductDetails);
+              alert(StringfieldProductDetails);
     
         }
         
@@ -48,10 +47,15 @@
     <input type ="number" id="txtCost"><br>
     <label id="lblLocation" for="txtLocation">Location:</label>
     <input type ="text" id="txtLocation"><br>
-    <label id="lblBookings" for="txtBookings">Bookings:</label>
-    <input type ="number" id="txtBookings"><br>
+    <label id="lblBookings" for="ddlBookings">Bookings:</label>
+    <select id="ddlBookings">
+        <option value="0">6:00am-9:00am</option>
+        <option value="1">9:00am-12:00pm</option>
+        <option value="2">12:00pm-3:00pm</option>
+        <option value="3">3:00pm-6:00pm</option>  
+    </select>
     <label id="lblContact" for="txtContact">Contact:</label>
-    <input type ="number" id="txtContact"><br>
+    <input type ="tel" id="txtContact" min="0" max="9999999999"><br>
     <button id="btnAddProduct" onclick="addProduct()">Add Product</button>
 </body>
    
