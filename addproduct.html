@@ -15,7 +15,7 @@
             var productBookings = document.getElementById("txtBookings").value;
             var productContact = document.getElementById("txtContact").value;
 
-          var ProductDetails = {
+            var ProductDetails = {
                 Name: productName,
                 Style: productStyle,
                 Project: productProject,
@@ -26,46 +26,47 @@
                 Contact: productContact
             };
 
-             var StringfieldProductDetails= JSON.stringify(ProductDetails);
-              alert(StringfieldProductDetails);
-    
+            var StringfieldProductDetails = JSON.stringify(ProductDetails);
+            alert(StringfieldProductDetails);
+
         }
-        
-            </script>
+
+    </script>
 </head>
 
 <body>
-    <label id="lblName" for="txtName">Name:</label>
-    <input type ="text" id="txtName"><br>
+    <form id="frmAddProduct" action="./summary.html" method="get">
+        <label id="lblName" for="txtName">Name:</label>
+        <input type="text" required id="txtName"><br>
 
-    <label id="lblStyle" for="txtStyle">Style of Paint:</label>
-    <input type ="text" id="txtStyle"><br>
+        <label id="lblStyle" for="txtStyle">Style of Paint:</label>
+        <input type="email" id="txtStyle"><br>
 
-    <label id="lblproject" for="txtProject">Project:</label>
-    <input type ="number" id="txtProject"><br>
+        <label id="lblproject" for="txtProject">Project:</label>
+        <input type="number" id="txtProject"><br>
 
-    <label id="lblExperience" for="txtExperience">Experience:</label>
-    <input type ="number" id="txtExperience"><br>
+        <label id="lblExperience" for="txtExperience">Experience:</label>
+        <input type="number" id="txtExperience"><br>
 
-    <label id="lblCost" for="txtCost">Cost:</label>
-    <input type ="number" id="txtCost"><br>
+        <label id="lblCost" for="txtCost">Cost:</label>
+        <input type="number" id="txtCost"><br>
 
-    <label id="lblLocation" for="txtLocation">Location:</label>
-    <input type ="text" id="txtLocation"><br>
+        <label id="lblLocation" for="txtLocation">Location:</label>
+        <input type="text" id="txtLocation"><br>
 
-    <label id="lblBookings" for="ddlBookings">Bookings:</label>
-    <select id="ddlBookings">
-        <option value="0">6:00am-9:00am</option>
-        <option value="1">9:00am-12:00pm</option>
-        <option value="2">12:00pm-3:00pm</option>
-        <option value="3">3:00pm-6:00pm</option>  
-    </select>
-    
-    <label id="lblContact" for="txtContact">Contact:</label>
-    <input type ="tel" id="txtContact" min="0" max="9"><br>
+        <label id="lblBookings" for="ddlBookings">Bookings:</label>
+        <select id="ddlBookings">
+            <option value="0">6:00am-9:00am</option>
+            <option value="1">9:00am-12:00pm</option>
+            <option value="2">12:00pm-3:00pm</option>
+            <option value="3">3:00pm-6:00pm</option>
+        </select>
 
-    <button id="btnAddProduct" onclick="addProduct()">Add Product</button>
+        <label id="lblContact" for="txtContact">Contact:</label>
+        <input type="tel" id="txtContact" min="0" max="9"><br>
+        <input type="submit" value="submit">
+    </form>
 </body>
-   
+
 
 </html>
